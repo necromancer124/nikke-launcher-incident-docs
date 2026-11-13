@@ -22,7 +22,7 @@ The honest answer to "were you hacked?" is **yes**. The honest answer to "did th
 
 **The infrastructure**
 - The IP address belongs to a hosting company (1984 ehf, Iceland).
-- The domain was registered on September 27, 2026 through PublicDomainRegistry and has been on client hold since November 5, 2026, 02:05 GMT.
+- The domain was (re-)registered on September 27, 2026 at 01:59 GMT through PublicDomainRegistry and has been on client hold since November 5, 2026, 02:05 GMT.
 - The host wrote that the server was shut down; the registrar wrote that the domain was suspended.
 
 ## ❌ Not proven (I don't state these as fact)

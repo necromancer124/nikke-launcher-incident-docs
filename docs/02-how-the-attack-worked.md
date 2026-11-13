@@ -16,7 +16,7 @@ I did not reverse-engineer the malware. This page combines what the community an
 | 6 | The payload file deletes itself after starting. | Partly: on my desktop the file was gone but the download record survived. |
 | 7 | While the launcher stays open, the agent checks in with the attacker's server on a timer and can receive commands. | Partly: the agent's saved state on my desktop shows a check-in interval of 1,800 seconds (30 minutes) and a counter of 4 messages sent. |
 | 8 | Commands reported by analysts include reading files, collecting browser data and looking for crypto wallets. | **No.** I have no record of which commands, if any, were sent to my PCs. |
-| 9 | A stronger form of persistence was reported on some PCs: a DLL (`platform_experience_helper.dll`) plus a registry change (a CLSID hijack under HKCU) so it survives after the launcher closes. | **Not found on either of my PCs.** |
+| 9 | A stronger form of persistence was reported on some PCs: the agent can drop a DLL (`platform_experience_helper.dll`) into Google Chrome's profile folder and register it under HKCU as Windows Parental Controls, so it loads into other apps and survives after the launcher closes. | **Not found on either of my PCs.** (Chrome isn't installed on my desktop.) |
 
 ## What makes it nasty
 
@@ -47,4 +47,4 @@ Download, register, start: 0.6 seconds.
 
 ## How it was first noticed
 
-According to the community write-ups, the first public report came from a player on the NGA forum: League of Legends' anti-cheat refused to start while the malware was loaded. That is the first public report I know of; others may have noticed earlier.
+According to the community write-ups, the first public report came from a player on the [NGA forum](https://bbs.nga.cn/read.php?tid=47843502): League of Legends' anti-cheat (Vanguard) blocks unsigned DLLs, so the game refused to start while the malware's DLL was loaded. That is the first public report I know of; others may have noticed earlier.

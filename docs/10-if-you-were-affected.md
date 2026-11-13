@@ -9,7 +9,8 @@ A short checklist. The publisher's own instructions come first; this is what I'd
 1. **Don't open the launcher** until you've checked.
 2. **Save your logs first.** Copy the launcher's `log` and `intl_service` folders to a USB stick or another drive. Cleanup tools delete them, and they are your only proof.
 3. **Check.** Use the publisher's official check, and/or a community check kit. Read any tool before running it.
-   - Official instructions: `[TODO: link to the Level Infinite notice]`
+   - Official manual check: https://nikke-en.com/newsdetail.html?content_id=ecdccd40a55a5a46aaa9abda64d436082db7
+   - Official apology (with how to report losses to Customer Support): https://nikke-en.com/newsdetail.html?content_id=3a94ebf0ab6c5a4703aa87aa57d0b8cd3d4b
    - Springz's step-by-step guide: https://github.com/SpringZali/nikke-launcher-triage
 4. **Clean** as the official guide says.
 5. **From a different device:** change your passwords (email first, then money, then the rest), log out of all sessions, turn on two-factor authentication.

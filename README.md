@@ -10,7 +10,7 @@ It is the serious companion to my story video *"How I Once Defended Gooners From
 
 ## The short version
 
-- On **September 27, 2026**, four files on NIKKE's own download servers were changed. From then on the official PC launcher could quietly download a small program and run it while the launcher was open. No fake website, no sketchy download: just opening the game.
+- On **September 27, 2026**, someone took over a domain the game had used, and five hours later four files on NIKKE's own download servers were changed to load code from it. From then on the official PC launcher could quietly download a small program and run it while the launcher was open. No fake website, no sketchy download: just opening the game.
 - **My desktop** ran it once, on **October 31**. **My laptop** ran it three times, on **November 1, 2 and 3**, each time I opened the launcher for my daily login.
 - My friend Springz warned me on **November 3 at 19:03**. My laptop's last infection was two hours earlier.
 - On **November 4** I confirmed it from my own logs, then followed the domain in those logs to an IP address and to the company renting out the server: **1984 ehf** in Iceland.

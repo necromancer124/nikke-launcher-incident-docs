@@ -36,7 +36,7 @@ The public registry record (RDAP) for `insightjs[.]com` shows:
 
 - **Registrar:** PDR Ltd. (PublicDomainRegistry)
 - **Name servers:** 1984's free DNS service
-- **Registered:** September 27, 2026: the same day NIKKE says the attack began
+- **Registered:** September 27, 2026, 01:59 GMT: about five hours before the launcher files were changed. The publisher says the domain had been "used for some game services" and was taken over by a third party, so this is when the attacker got it, not when it first existed.
 
 The raw record is in [`evidence/insightjs-rdap-verisign-nov12.json`](../evidence/insightjs-rdap-verisign-nov12.json).
 

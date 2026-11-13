@@ -11,7 +11,7 @@ The people who figured this out did not work for the publisher. They were player
 | **MotherSphere** | The first public technical breakdown, and a scanner. |
 | **whyKusanagi** | A check-and-removal kit, a detailed timeline, and reports to Microsoft and CISA. |
 | **A Japanese community moderator** | Pinned a warning before there was any official post. |
-| **Whoever registered the attacker's backup domain** | Reportedly turned it into a warning page. |
+| **Whoever registered the loader's fallback domain** | Registered `insightjs[.]org` on Nov 3 and turned it into a warning page, so infected launchers showed a warning instead of fetching more malware. |
 | **Matsur1_san** | Their public scan result showed the same IP address as my logs: the post that connected the dots for me. |
 | **Everyone who reported the server and the domain** | Several people did. The takedown is theirs too. |
 | **1984 ehf and PublicDomainRegistry** | Answered abuse reports fast and acted on them. |
@@ -19,9 +19,11 @@ The people who figured this out did not work for the publisher. They were player
 ## Sources
 
 **Community analysis**
+- The NGA forum thread where it was first reported: https://bbs.nga.cn/read.php?tid=47843502 (needs an account)
 - MotherSphere, public breakdown: https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5
+- MotherSphere, incident write-up: https://github.com/MotherSphere/NIKKE-Launcher-Check/blob/main/docs/incident.md
 - MotherSphere, scanner (the one I read and ran): https://github.com/MotherSphere/NIKKE-Launcher-Check
-- whyKusanagi, check kit and docs: https://github.com/whykusanagi/nikke_malware
+- whyKusanagi, check kit, docs and timeline (in the README): https://github.com/whykusanagi/nikke_malware
 - whyKusanagi, post: https://x.com/whyKusanagi/status/2118386344900919590
 - Springz, guide and community logs: https://github.com/SpringZali/nikke-launcher-triage
 
@@ -34,7 +36,14 @@ The people who figured this out did not work for the publisher. They were player
 - Matsur1_san, infected scan result: https://x.com/Matsur1_san/status/2117789672558539183
 
 **Official**
-- The publisher's notices and the @NIKKE_en manual check post: `[TODO: add the official links]`
+- First notice, Nov 4, 03:13 GMT: https://x.com/NIKKE_en/status/2117817602659770434
+- Apology, Nov 4, 23:01 GMT: https://x.com/NIKKE_en/status/2118116340225732677 (official page: https://nikke-en.com/newsdetail.html?content_id=3a94ebf0ab6c5a4703aa87aa57d0b8cd3d4b)
+- Manual security check, Nov 4, 23:11 GMT: https://x.com/NIKKE_en/status/2118118928631451774 (official page: https://nikke-en.com/newsdetail.html?content_id=ecdccd40a55a5a46aaa9abda64d436082db7)
+- Additional notice, Nov 10: https://x.com/NIKKE_en/status/2120182878143430985 (official page: https://nikke-en.com/newsdetail.html?content_id=d58204e4a5cc4a4824a8dd3a77f0f5089e12)
+
+**Press and security vendors**
+- BleepingComputer, Nov 4: https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/
+- Malwarebytes, Nov 5: https://www.malwarebytes.com/blog/news/2026/11/nikke-pc-launcher-compromise-put-players-passwords-and-personal-files-at-risk
 
 **Public records**
 - RDAP record for the attacker's domain (saved copy in [`evidence/`](../evidence/))
