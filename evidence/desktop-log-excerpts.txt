@@ -1,0 +1,31 @@
+DESKTOP PC - LAUNCHER LOG EXCERPTS - 2026-10-31 (local time, GMT+2)
+Redacted: PC name removed, attacker domain/IP defanged, long lines shortened with "...".
+Nothing else was changed. Originals are kept offline with a SHA-256 manifest.
+
+=== <launcher>\log\tinyget\tinyget.20261031-191104-537.log ===
+
+[2026-10-31 19:15:07.367][...][ERROR][tiny_downloader.cpp(103)]tiny_downloader::TinyDownloader::AddTask  add task, task_id=2147483648, url=hxxps://analytics.insightjs[.]com/comm/assets/insight.bundle, path=<launcher>\log\tin...
+[2026-10-31 19:15:07.479][...][ERROR][tiny_downloader.cpp(201)]tiny_downloader::TinyDownloader::TryExcuteTaskInternal  running task list, task_id:2147483648, url:hxxps://analytics.insightjs[.]com/comm/assets/insight.bundle.
+[2026-10-31 19:15:08.351][...][ERROR][http_curl.cpp(144)]tiny_downloader::HttpCurl::Download  task=2147483648, curl perform success. url=hxxps://analytics.insightjs[.]com/comm/assets/insight.bundle
+[2026-10-31 19:15:08.351][...][ERROR][download_task.cpp(519)]tiny_downloader::DownloadTask::OnDownloadResult  OnDownloadResult, task=2147483648, result=0, error_code=0, strategy=0, total=205135, ...
+
+=== <launcher>\log\tinyget\tinyget.mem.log ===
+
+[2026-10-31 19:15:07.706][...][TRACE][http_curl.cpp(491)]tiny_downloader::HttpCurl::ShowDebugInfo  [CURL]Connected to analytics.insightjs[.]com (89.127.233[.]127) port 443 (#0)
+
+=== <launcher>\intl_service\debug.log ===
+
+[1031/191508.367:INFO:CONSOLE(1)] "lua downloaded to log\tinyget\tinyget.20261031-191507-353.log", source:  (1)
+[1031/191508.542:INFO:CONSOLE(1)] "k2f_chan registered", source:  (1)
+[1031/191508.924:INFO:CONSOLE(1)] "agent started as [PC NAME REMOVED]", source:  (1)
+
+=== What these lines show ===
+
+19:15:07.367  the launcher's own downloader is told to fetch insight.bundle from the attacker's domain
+19:15:07.706  it connects: the domain resolves to 89.127.233[.]127
+19:15:08.351  download finished without error, 205,135 bytes
+19:15:08.367  the file is saved under a fake .log name in the launcher's log folder
+19:15:08.542  the script registers its channel
+19:15:08.924  the agent starts and identifies itself by the PC's name
+
+Note: the downloader logs these as [ERROR] level, but they are ordinary progress messages; that is how this launcher labels them.
