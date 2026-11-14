@@ -1,6 +1,6 @@
 # Before making this repo public
 
-This repo is **private**. What's left before it can go public:
+Made **public** on November 14, 2026. The items below were still open at that point.
 
 ## Still to do
 

@@ -4,8 +4,6 @@ I'm Necromancer (necromancer124), an IT student. In late October and early Novem
 
 It is the serious companion to my story video **[*"How I Once Defended Gooners From a Cyber Attack"*](https://youtu.be/a494T6VFqEA)** (YouTube).
 
-> **Status: private draft.** Read [`BEFORE-PUBLISHING.md`](BEFORE-PUBLISHING.md) before making this repo public.
-
 > 🛡️ **Safety:** the attacker's domain and IP are written **defanged** everywhere (`analytics.insightjs[.]com`, `89.127.233[.]127`). Do not visit them.
 
 ## The short version
