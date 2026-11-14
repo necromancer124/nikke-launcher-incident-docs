@@ -50,6 +50,7 @@ The people who figured this out did not work for the publisher. They were player
 - IP WHOIS for the server's address
 
 **My own**
+- My video about the incident: https://youtu.be/a494T6VFqEA
 - Launcher logs and Windows logs from my two PCs (kept offline; redacted excerpts in [`evidence/`](../evidence/))
 - My log redaction tool: https://github.com/necromancer124/nikke-log-redactor
 

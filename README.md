@@ -2,7 +2,7 @@
 
 I'm Necromancer (necromancer124), an IT student. In late October and early November 2026 the official PC launcher of *GODDESS OF VICTORY: NIKKE* ran attacker code on two of my PCs. This repo is my complete write-up: what happened to me, what my logs show, how my friend Springz and I traced the attacker's server, how it was reported and taken down, and what I can and cannot prove.
 
-It is the serious companion to my story video *"How I Once Defended Gooners From a Cyber Attack"*.
+It is the serious companion to my story video **[*"How I Once Defended Gooners From a Cyber Attack"*](https://youtu.be/a494T6VFqEA)** (YouTube).
 
 > **Status: private draft.** Read [`BEFORE-PUBLISHING.md`](BEFORE-PUBLISHING.md) before making this repo public.
 

@@ -6,11 +6,11 @@ This repo is **private**. What's left before it can go public:
 
 - [ ] **Let Springz read `docs/06-reports-and-takedown.md`** and confirm the wording about his emails and reports.
 - [ ] **Check the dates that depend on "today"**: "As of November 13, 2026 … the attacker has not been caught" appears in `README.md`, `docs/01-timeline.md` and `docs/10-if-you-were-affected.md`. Update them to the publishing date.
-- [ ] **Link the video** in `README.md` once it is public, and link this repo from the video description.
 - [ ] Optional: the exact time of the host's two replies to Springz. The screenshot says 3:42 PM in his time zone; the timeline just says "Nov 4, evening".
 
 ## Done (2026-11-13)
 
+- [x] **Video linked** (2026-11-14): https://youtu.be/a494T6VFqEA in `README.md`, `docs/06` and `docs/11`. The video description links back to this repo, so **make the repo public before the video goes public**, or the link will 404.
 - [x] **Scanner verdict approved** (2026-11-14): the verdict on MotherSphere's checker in `docs/03-my-laptop.md` and the version (v0.4.0) confirmed by Necromancer.
 
 - [x] **Named people approved.** Springz, MotherSphere, whyKusanagi and Matsur1_san are OK being named and linked (confirmed by Necromancer).

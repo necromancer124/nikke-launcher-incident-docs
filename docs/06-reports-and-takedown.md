@@ -46,7 +46,7 @@ With the domain on hold, the address the malware called no longer leads anywhere
 
 ## Who gets the credit: read this part
 
-In my video I say "we shut it down". That is the story from where I was standing: the confirmations and the domain suspension email arrived in our chat. The precise version is:
+In [my video](https://youtu.be/a494T6VFqEA) I say "we shut it down". That is the story from where I was standing: the confirmations and the domain suspension email arrived in our chat. The precise version is:
 
 - **The server.** According to whyKusanagi's timeline, the host shut the server down on **November 4 at 05:09 GMT**, after an abuse report from another researcher. One community report even says it stopped answering on November 3, 18:31 GMT (unconfirmed). Springz's report came later the same day, and the host's security team **confirmed** the shutdown to him. So the server was not taken down by our report. What I can say is: *the host confirmed to us that the server was shut down.*
 - **The domain.** Several people reported the domain to the registrar. Springz has the registrar's email confirming that **his** report was reviewed and the domain was suspended about five hours later. *"We alone took it down"* would not be accurate. *"Our report was reviewed and the domain was suspended"* is.
