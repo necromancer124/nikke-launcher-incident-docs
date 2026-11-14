@@ -35,9 +35,25 @@ Also:
 
 ## How I confirmed it
 
-1. I did not trust a random "virus checker" during an active attack, so I **read the scanner's code first**. It was read-only: it looks for the known log lines, files and registry entries, and deletes or uploads nothing.
+1. I did not trust a random "virus checker" during an active attack, so I **read the scanner's code first** (MotherSphere's NIKKE-Launcher-Check, see my verdict below). It was read-only: it looks for the known log lines, files and registry entries, and deletes or uploads nothing.
 2. I ran it. It reported the agent starts in the launcher log and the attacker's address.
 3. I opened the logs myself and found the same lines by hand.
+
+## My verdict on MotherSphere's checker
+
+The scanner I read and ran was **MotherSphere's NIKKE-Launcher-Check** (https://github.com/MotherSphere/NIKKE-Launcher-Check). I ran it on the morning of November 4 (about 09:20 GMT). At that time the newest release was **v0.4.0** (published Nov 4, 01:53 GMT), so that is the version I used.
+
+**My verdict: trustworthy, and it did its job.**
+
+- **It's a real program, not a scam.** I read the code before running it. It is **read-only**: it searches for the known log lines, files and registry entries and reports what it finds. It doesn't delete anything, doesn't upload anything, and doesn't need to talk to the internet to scan.
+- **It was right.** It said INFECTED, and when I opened the logs myself I found the same lines by hand. After my cleanup it said NIKKE NOT FOUND.
+- **But a tool existing doesn't prove a hack. The logs do.** The scanner was useful because it pointed me at the exact lines in my own logs, which I could check myself. That's the right way to use any checker: as a pointer, not as the proof.
+
+Things worth knowing about that version:
+
+- It was built in a hurry during a live incident; v0.4.0 came out about six hours after v0.1.0. The very next release (v0.4.1, the same day) fixed two things: it now only counts an agent download that actually finished, and it can read the compressed storage files where the agent keeps its state. So v0.4.0 could, in some cases, count an unfinished download or miss the saved agent state. On my laptop the verdict didn't depend on either: the agent starts were in `debug.log` in plain text.
+- Later versions added a quick scan, more traces of the Chrome DLL, the Google Play Games launcher, 15 languages and a "what to do" guide. If you scan today, use the latest release, not the one I used.
+- Some antivirus programs, including Microsoft Defender, flag the scanner itself as suspicious (a false positive: the program is unsigned and searches the whole disk). The project explains this at the top of its README. Download it **only** from the project's own GitHub releases page.
 
 ## What I did (November 4)
 

@@ -10,16 +10,17 @@ Every infection in my launcher logs pointed at the same address: `analytics.insi
 
 ## Step 2: domain → IP address
 
-Two independent things gave me the IP address `89.127.233[.]127`:
+Three independent things gave me the IP address `89.127.233[.]127`:
 
-1. **My own log.** The launcher's downloader wrote `Connected to analytics.insightjs[.]com (89.127.233[.]127) port 443` at the moment of infection (see [`04-my-desktop.md`](04-my-desktop.md)).
-2. **Another player's public scan result.** Their scanner output listed the same address as the server it had checked. Same malware, same server.
+1. **A DNS lookup.** On November 4 the domain still worked, so the Windows `nslookup` command answered with the IP address it pointed to. Nothing connects to the server: it only asks the DNS system for the address. (Since November 5 the domain is suspended and this lookup returns nothing, which is why the next point matters.)
+2. **My own log.** The launcher's downloader wrote `Connected to analytics.insightjs[.]com (89.127.233[.]127) port 443` at the moment of infection (see [`04-my-desktop.md`](04-my-desktop.md)).
+3. **Another player's public scan result.** Their scanner output listed the same address as the server it had checked. Same malware, same server.
 
 A second address in the same hosting range, `89.126.250[.]172`, was also listed in community indicator lists. I blocked both, but only the first one appears in my own logs.
 
 ## Step 3: IP address → company
 
-Every IP address belongs to a block, and the block's owner is public (WHOIS / RDAP). The lookup said:
+Every IP address belongs to a block, and the block's owner is public (WHOIS / RDAP). I looked the address up on **[whois.com](https://www.whois.com/whois/)**: paste the IP address into the search box and it shows who the block is registered to. Nothing is sent to the attacker; it only reads the public registry. The lookup said:
 
 - **Owner:** 1984 ehf, Reykjavik, Iceland
 - **Network:** AS44925
@@ -52,8 +53,9 @@ That is why the reports asked the host to **keep its logs** for the publisher or
 All free and public:
 
 - The launcher's own log files
-- An IP WHOIS lookup site
-- An RDAP lookup (the registry's own record for the domain)
+- `nslookup` (built into Windows): domain → IP address, while the domain still worked
+- [whois.com](https://www.whois.com/whois/): IP address → the company it belongs to
+- An RDAP lookup (the registry's own record for the domain): who sold the domain, when, and its current status
 - A text editor
 
 I did not scan, probe or connect to the attacker's server at any point.

@@ -7,6 +7,7 @@ This repo is **private**. What's left before it can go public:
 - [ ] **Let Springz read `docs/06-reports-and-takedown.md`** and confirm the wording about his emails and reports.
 - [ ] **Check the dates that depend on "today"**: "As of November 13, 2026 … the attacker has not been caught" appears in `README.md`, `docs/01-timeline.md` and `docs/10-if-you-were-affected.md`. Update them to the publishing date.
 - [ ] **Link the video** in `README.md` once it is public, and link this repo from the video description.
+- [ ] **Read your scanner verdict** in `docs/03-my-laptop.md` ("My verdict on MotherSphere's checker") and change it to your own words. I wrote it from what you said in the chat on Nov 4 and from the scanner's changelog. Also confirm the version: **v0.4.0** was the newest release when you ran it (about 09:20 GMT on Nov 4); if you downloaded it the evening before, it was v0.2.0 or v0.2.1.
 - [ ] Optional: the exact time of the host's two replies to Springz. The screenshot says 3:42 PM in his time zone; the timeline just says "Nov 4, evening".
 
 ## Done (2026-11-13)
